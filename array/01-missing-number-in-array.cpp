@@ -1,4 +1,4 @@
-// PROBLEM: Missong number in array
+// PROBLEM: Missing number in array
 // https://leetcode.com/problems/missing-number/
 // https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/
 
