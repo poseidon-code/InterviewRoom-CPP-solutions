@@ -1,0 +1,3 @@
+# ignore executable files
+**/a.out
+**/a.exe
