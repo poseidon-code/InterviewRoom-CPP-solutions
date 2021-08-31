@@ -11,15 +11,15 @@ using namespace std;
 
 // SOLUTION
 vector<int> two_sum (vector<int> &nums, int target) {
-    unordered_map<int, int> imap;
+    unordered_map<int, int> map;
 
     for (int i=0;; i++) {
-        auto it = imap.find(target - nums[i]);
+        auto it = map.find(target - nums[i]);
 
-        if (it != imap.end())
-            return {i, it->second};
+        if (it != map.end())
+            return {it->second, i};
         
-        imap[nums[i]] = i;
+        map[nums[i]] = i;
     }
 }
 
@@ -31,7 +31,7 @@ int main() {
 
     // OUTPUT :
     auto twosum = two_sum(nums, target);
-    cout<<"["<<twosum[1]<<", "<<twosum[0]<<"]"<<endl;
+    cout<<"["<<twosum[0]<<", "<<twosum[1]<<"]"<<endl;
 
     return 0;
 }
