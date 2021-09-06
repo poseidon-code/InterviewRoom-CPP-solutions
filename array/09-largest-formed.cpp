@@ -22,6 +22,8 @@ string largest_formed(vector<int> &nums) {
         }
     );
 
+    if (s[0].at(0)=='0') return "0";
+
     string result;
     for (auto i : s) result+=i;
     
@@ -31,7 +33,7 @@ string largest_formed(vector<int> &nums) {
 
 int main() {
     // INPUT :
-    vector<int> nums = {0,0};
+    vector<int> nums = {3,30,34,5,9};
 
     // OUTPUT :
     cout<<largest_formed(nums)<<endl;
