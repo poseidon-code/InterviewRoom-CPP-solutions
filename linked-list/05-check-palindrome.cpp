@@ -1,6 +1,6 @@
 // PROBLEM: Check if a linked list is palindrome
 // https://leetcode.com/problems/palindrome-linked-list/
-// ttps://www.interviewbit.com/problems/palindrome-list/
+// https://www.interviewbit.com/problems/palindrome-list/
 
 #include<iostream>
 
