@@ -1,6 +1,6 @@
 // PROBLEM: Add two numbers
 // https://leetcode.com/problems/add-two-numbers/
-// ttps://www.interviewbit.com/problems/add-two-numbers-as-lists/
+// https://www.interviewbit.com/problems/add-two-numbers-as-lists/
 
 
 #include<iostream>
