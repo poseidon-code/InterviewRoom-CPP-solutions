@@ -5,20 +5,22 @@
 
 #include<iostream>
 #include<vector>
+#include<stack>
 
 using namespace std;
 
 // SOLUTION
 vector<int> next_greater (vector<int> &nums) {
     int n = nums.size();
-    vector<int> stack, result(n, -1);
+    stack<int> stack;
+    vector<int> result(n, -1);
 
     for (int i=0; i<n*2; i++) {
-        while (stack.size() && nums[stack.back()] < nums[i%n]) {
-            result[stack.back()] = nums[i%n];
-            stack.pop_back();
+        while (!stack.empty() && nums[stack.top()] < nums[i%n]) {
+            result[stack.top()] = nums[i%n];
+            stack.pop();
         }
-        stack.push_back(i%n);
+        stack.push(i%n);
     }
 
     return result;
