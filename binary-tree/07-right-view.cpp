@@ -42,11 +42,11 @@ vector<int> right_view (Node *root) {
     q.push(root);
 
     while (!q.empty()) {
-        result.push_back(q.back()->data);
+        int size = q.size();
 
-        for (int i=q.size(); i>0; i--) {
-            Node *t = q.front();
-            q.pop();
+        for (int i=0; i<size; i++) {
+            Node *t = q.front(); q.pop();
+            if (i==size-1) result.push_back(t->data);
             if (t->left) q.push(t->left);
             if (t->right) q.push(t->right);
         }
