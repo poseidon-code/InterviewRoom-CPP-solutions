@@ -1,4 +1,4 @@
-// PROBLEM: Sind square root of a number
+// PROBLEM: Find square root of a number
 // https://leetcode.com/problems/sqrtx/
 // https://www.interviewbit.com/problems/square-root-of-integer/
 
