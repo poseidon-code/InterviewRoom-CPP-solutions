@@ -24,7 +24,7 @@ int cutting (vector<int> &price, int n) {
 
 int main() {
     // INPUT :
-    vector<int> price = {1,5,8,9,10,17,20};
+    vector<int> price = {1,5,8,9,10,17,17,20};
     int n = 8;
 
     // OUTPUT :
