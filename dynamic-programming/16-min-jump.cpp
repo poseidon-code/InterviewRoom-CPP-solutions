@@ -12,17 +12,17 @@ using namespace std;
 int jump (vector<int>& nums) {
     int jumps=0;
     int ce = 0, cf = 0;
-	
+
     for (int i=0; i<nums.size()-1; i++) {
-		cf = max(cf, i + nums[i]);
+        cf = max(cf, i + nums[i]);
 
         if (i == ce) {
-			jumps++;
-			ce = cf;
-		}
-	}
+            jumps++;
+            ce = cf;
+        }
+    }
 
-	return jumps;
+    return jumps;
 }
 
 
