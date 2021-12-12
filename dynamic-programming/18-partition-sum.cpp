@@ -15,7 +15,7 @@ bool partition (vector<int>& nums) {
     sum /=2;
 
     int n = nums.size();
-    vector<bool> dp(n+1, false);
+    vector<bool> dp(sum+1, false);
     dp[0] = true;
 
     for (int x : nums)
