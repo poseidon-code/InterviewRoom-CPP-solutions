@@ -1,6 +1,6 @@
 // PROBLEM: Find whether the pat exists
-// https://www.interviewbit.com/problems/cycle-in-undirected-graph/
-// https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1/?category[]=Graph&category[]=Graph&page=1&query=category[]Graphpage1category[]Graph
+// https://www.interviewbit.com/problems/path-in-directed-graph/
+// https://practice.geeksforgeeks.org/problems/find-whether-path-exist5238/1/?category[]=Graph&category[]=Graph&page=1&query=category[]Graphpage1category[]Graph
 
 #include<iostream>
 #include<vector>
