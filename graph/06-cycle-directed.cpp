@@ -28,7 +28,7 @@ bool can_finish (int courses, vector<vector<int>>& prerequisites) {
 
 int main() {
     // INPUT :
-    int courses = 5;
+    int courses = 2;
     vector<vector<int>> prerequisites = {{1,0},{0,1}};
 
     // OUTPUT :
