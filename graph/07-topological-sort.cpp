@@ -10,26 +10,26 @@ using namespace std;
 // SOLUTION
 vector<int> find_order (int courses, vector<vector<int>>& prerequisites) {
     vector<vector<int>> G(courses);
-        vector<int> ans, indegree(courses);
-        for (auto& pre : prerequisites) 
-            G[pre[1]].push_back(pre[0]),
-            indegree[pre[0]]++;
+    vector<int> ans, indegree(courses);
+    for (auto& pre : prerequisites) 
+        G[pre[1]].push_back(pre[0]),
+        indegree[pre[0]]++;
 
-        queue<int> q;
-        for (int i=0; i<courses; i++)
-            if (indegree[i] == 0) q.push(i);
+    queue<int> q;
+    for (int i=0; i<courses; i++)
+        if (indegree[i] == 0) q.push(i);
+    
+    while (size(q)) {
+        auto cur = q.front(); q.pop();
+        ans.push_back(cur);
         
-        while (size(q)) {
-            auto cur = q.front(); q.pop();
-            ans.push_back(cur);
-            
-            for (auto nextCourse : G[cur])
-                if (--indegree[nextCourse] == 0)
-                    q.push(nextCourse);
-        }
+        for (auto nextCourse : G[cur])
+            if (--indegree[nextCourse] == 0)
+                q.push(nextCourse);
+    }
 
-        if (size(ans) == courses) return ans;
-        return {};
+    if (size(ans) == courses) return ans;
+    return {};
 }
 
 
